@@ -18,8 +18,8 @@ app.use(morgan("combined"));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "..", "public")));
 
-app.use(planetsRuter);
-app.use(launchesRouter);
+app.use("/planets", planetsRuter);
+app.use("/launches", launchesRouter);
 app.get("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "..", "public", "index.html"));
 });
