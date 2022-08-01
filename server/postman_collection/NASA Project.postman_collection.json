@@ -26,6 +26,63 @@
 			"response": []
 		},
 		{
+			"name": "POST /launches",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"mission\": \"Test Mission\",\n    \"rocket\": \"Experimental IS1\",\n    \"destination\": \"Test Planet\",\n    \"launchDate\": \"January 17, 2030\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/launches",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"launches"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /launches/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"mission\": \"Test Mission\",\n    \"rocket\": \"Experimental IS1\",\n    \"destination\": \"Test Planet\",\n    \"launchDate\": \"January 17, 2030\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/launches/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"launches",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "GET /planets",
 			"request": {
 				"method": "GET",
