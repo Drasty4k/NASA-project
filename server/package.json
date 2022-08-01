@@ -5,6 +5,7 @@
   "main": "src/server.js",
   "scripts": {
     "watch": "nodemon src/server.js",
+    "test-watch": "jest --watch",
     "start": "nodemon src/server.js",
     "test": "jest"
   },
