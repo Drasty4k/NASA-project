@@ -7,7 +7,7 @@
     "watch": "nodemon src/server.js",
     "test-watch": "jest --watch",
     "start": "nodemon src/server.js",
-    "test": "jest",
+    "test": "jest --detectOpenHandles",
     "cluster": "pm2 start src/server.js -i max"
   },
   "keywords": [],
